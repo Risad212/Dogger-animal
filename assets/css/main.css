@@ -86,6 +86,7 @@ p, span, button {
 }
 
 #navbar .row .navbar-list ul li .dropdown-container {
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,6 +264,8 @@ p, span, button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 70vh;
+  padding: 5rem 0;
 }
 
 #hero .row .col-6 h1 {
@@ -273,7 +276,7 @@ p, span, button {
 
 #hero .row .col-6 p {
   padding: .5rem 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: gray;
   font-weight: 300;
   line-height: 1.5;
@@ -316,5 +319,41 @@ p, span, button {
 #hero .row .col-6 button:hover::after {
   color: #fff;
   left: 0;
+}
+
+#hero .row .col-6 img {
+  max-width: 80%;
+  height: auto;
+}
+
+/*------- hero responsive --------*/
+@media only screen and (max-width: 992px) {
+  #hero .row .col-6 h1 {
+    font-size: 2.5rem;
+  }
+  #hero .row .col-6 p {
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero .row {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #hero .row .col-6 img {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #hero .row .col-6 h1 {
+    font-size: 2rem;
+  }
+  #hero .row .col-6 p {
+    font-size: .8rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
