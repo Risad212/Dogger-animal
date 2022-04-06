@@ -1,0 +1,65 @@
+#welcome{
+    .row{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       margin-bottom: 1rem;
+      .col-6{
+          text-align: right;
+          h4{
+              font-size: 1.9rem;
+              font-weight: 400;
+              margin-bottom: .2rem;
+          }
+          p{
+              font-size: .9rem;
+              font-weight: 400;
+              color: $gray;
+              line-height: 1.5;
+          }
+          button{
+            padding: .6rem 2rem;
+            border-radius: 2rem;
+            font-size: .8rem;
+            margin-top: 1rem;
+            background: $button-primary;
+            border: 1px solid $button-primary;
+            outline: none;
+            transition: all .3s ease;
+            &:hover{
+                background: $dak-color;
+            }
+            a{
+                color: $white-color;
+            }
+          }
+          img{
+                max-width: 90%;
+                height: auto;
+          }
+      }
+      .welcome-content{
+        padding: 5rem 4rem;
+      }
+      .second{
+        text-align: left;
+      }
+    }
+}
+
+
+
+
+// welcome responsive
+@media only screen and (max-width: 992px){
+    #welcome{
+        .row{
+            grid-template-columns: 1fr;
+            .col-6{
+                text-align: left;
+            }
+            .welcome-content{
+                padding: 3rem 2rem;
+            }
+        }
+    }
+}

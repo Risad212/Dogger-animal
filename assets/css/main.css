@@ -41,6 +41,51 @@ p, span, button {
   padding: 0 1rem;
 }
 
+.head-content {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.head-content i {
+  font-size: 2rem;
+  color: #a2c0be;
+  padding-bottom: 1rem;
+}
+
+.head-content h3 {
+  font-size: 1.9rem;
+  margin-bottom: .8rem;
+}
+
+.head-content p {
+  font-size: .9rem;
+  color: gray;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0 20rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .head-content p {
+    padding: 0 15rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .head-content p {
+    padding: 0 10rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .head-content h3 {
+    font-size: 1.2rem;
+  }
+  .head-content p {
+    padding: 0 2rem;
+  }
+}
+
 #navbar {
   padding: 1rem 2rem;
   background: #f8f9fa;
@@ -253,7 +298,7 @@ p, span, button {
 
 #hero {
   background: #f8f9fa;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 #hero .row {
@@ -354,6 +399,77 @@ p, span, button {
   }
   #hero .row .col-6 p {
     font-size: .8rem;
+  }
+}
+
+#welcome .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-bottom: 1rem;
+}
+
+#welcome .row .col-6 {
+  text-align: right;
+}
+
+#welcome .row .col-6 h4 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: .2rem;
+}
+
+#welcome .row .col-6 p {
+  font-size: .9rem;
+  font-weight: 400;
+  color: gray;
+  line-height: 1.5;
+}
+
+#welcome .row .col-6 button {
+  padding: .6rem 2rem;
+  border-radius: 2rem;
+  font-size: .8rem;
+  margin-top: 1rem;
+  background: #7ca6a3;
+  border: 1px solid #7ca6a3;
+  outline: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#welcome .row .col-6 button:hover {
+  background: #000;
+}
+
+#welcome .row .col-6 button a {
+  color: #fff;
+}
+
+#welcome .row .col-6 img {
+  max-width: 90%;
+  height: auto;
+}
+
+#welcome .row .welcome-content {
+  padding: 5rem 4rem;
+}
+
+#welcome .row .second {
+  text-align: left;
+}
+
+@media only screen and (max-width: 992px) {
+  #welcome .row {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #welcome .row .col-6 {
+    text-align: left;
+  }
+  #welcome .row .welcome-content {
+    padding: 3rem 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
