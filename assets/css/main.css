@@ -417,7 +417,7 @@ p, span, button {
 #welcome .row .col-6 h4 {
   font-size: 1.9rem;
   font-weight: 400;
-  margin-bottom: .2rem;
+  margin-bottom: .5rem;
 }
 
 #welcome .row .col-6 p {
@@ -471,5 +471,77 @@ p, span, button {
   #welcome .row .welcome-content {
     padding: 3rem 2rem;
   }
+}
+
+#about .row {
+  padding: 5rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#about .row .col-6 i {
+  font-size: 2rem;
+  color: #a2c0be;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+#about .row .col-6 h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+
+#about .row .col-6 p {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  font-weight: 300;
+  color: gray;
+}
+
+#about .row .col-6 span {
+  font-weight: 300;
+  display: block;
+  padding-bottom: 1.5rem;
+  font-size: .9rem;
+}
+
+#about .row .col-6 ul li {
+  color: gray;
+}
+
+#about .row .col-6 ul li i {
+  font-size: 1rem;
+  padding-right: 1rem;
+  padding-left: 0;
+}
+
+#about .row .col-6 img {
+  max-width: 90%;
+  height: auto;
+  position: relative;
+}
+
+#about .row .col-6:nth-child(1) {
+  padding: 8rem 0;
+  padding-right: 2rem;
+  padding-left: 8rem;
+}
+
+#about .row .col-6:nth-child(2) {
+  position: relative;
+}
+
+#about .row .col-6:nth-child(2) i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-22%, -52%);
+          transform: translate(-22%, -52%);
+  z-index: 2;
+  font-size: 3rem;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
