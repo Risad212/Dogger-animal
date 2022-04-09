@@ -685,4 +685,84 @@ p, span, button {
     max-width: 100%;
   }
 }
+
+#price {
+  padding: 5em 0;
+}
+
+#price .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+#price .row .col-4 {
+  margin: 0;
+  padding: 5rem 2rem;
+  background: #a2c0be;
+  text-align: center;
+  color: #fff;
+}
+
+#price .row .col-4 h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+#price .row .col-4 h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+#price .row .col-4 h2 span {
+  font-size: .9rem;
+}
+
+#price .row .col-4 ul {
+  margin: 3rem 0;
+  text-align: left;
+}
+
+#price .row .col-4 ul li {
+  font-size: .9rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+#price .row .col-4 ul li i {
+  padding-right: .9rem;
+}
+
+#price .row .col-4 button {
+  padding: .8rem 2rem;
+  border-radius: 33px;
+  border: none;
+  background: #6c757d;
+  margin-top: 1.2rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#price .row .col-4 button:hover {
+  background: #000;
+}
+
+#price .row .col-4 button a {
+  color: #fff;
+  font-size: .9rem;
+}
+
+#price .row .col-4:nth-child(2) {
+  background: #343a40;
+}
+
+#price .row .col-4:nth-child(2) button {
+  background: #a2c0be;
+}
+
+#price .row .col-4:nth-child(2) button:hover {
+  background: #000;
+}
 /*# sourceMappingURL=main.css.map */
