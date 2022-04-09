@@ -590,4 +590,99 @@ p, span, button {
     padding-left: 2rem;
   }
 }
+
+#trainer {
+  background: #a2c0be;
+  padding: 5em 0;
+}
+
+#trainer .head-content i {
+  color: #fff;
+}
+
+#trainer .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+#trainer .row .col-4 img {
+  max-width: 100%;
+}
+
+#trainer .row .col-4 h4 {
+  font-weight: 400;
+  padding: 1.5rem 0;
+  font-size: 1.3rem;
+  color: #405a58;
+}
+
+#trainer .row .col-4 p {
+  font-weight: 300;
+  font-size: .9rem;
+  line-height: 1.8;
+}
+
+#trainer .row .col-4 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+#trainer .row .col-4 ul li {
+  background: #fff;
+  margin-right: 1rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .8rem;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+#trainer .row .col-4 ul li:hover {
+  margin-top: -8px;
+}
+
+#trainer .row .col-4 ul li a {
+  color: #000;
+}
+
+@media only screen and (max-width: 992px) {
+  #trainer .row {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #trainer .row .col-4 {
+    padding: 0 2rem;
+    margin-bottom: 5rem;
+  }
+  #trainer .row .col-4 img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #trainer .row {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #trainer .row .col-4 {
+    padding: 0 3rem;
+  }
+  #trainer .row .col-4 img {
+    max-width: 100%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
