@@ -60,3 +60,37 @@
        }
     }
 }
+
+
+
+// price table responsive
+@media only screen and (max-width: 992px){
+    #price{
+        .row{
+            grid-template-columns: repeat(2,1fr);  
+            .col-4{
+                margin: 0 4rem;
+                margin-right: 0;
+                &:nth-child(2){
+                    margin-left: 0;
+                    margin-right: 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #price{
+        .row{
+            grid-template-columns: repeat(1,1fr);
+            .col-4{
+                text-align: center;
+                margin: 0;
+                &:nth-child(2){
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
