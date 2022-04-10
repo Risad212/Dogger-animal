@@ -1,0 +1,13 @@
+#gallary{
+    padding: 5em 0;
+    .row{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .col-3{
+            padding: 0;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}

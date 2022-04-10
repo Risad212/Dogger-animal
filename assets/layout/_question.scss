@@ -1,13 +1,15 @@
 #question{
     padding: 5em 0;
+    margin-bottom: 3rem;
     .row{
          display: grid;
          grid-template-columns: 1fr 1fr;
+         margin-top: 2rem;
         .col-6{
             display: flex;
             span{
                 background: $light-primary;
-                width: 16%;
+                padding: .7rem;
                 height: 30px;
                 border-radius: 3.3rem;
                 display: flex;
@@ -42,6 +44,7 @@
                         i{
                             padding-right: 1rem;
                             color: $primary-color;
+                            font-size: 1rem;
                         }
                     }
                 }
@@ -49,6 +52,48 @@
             img{
                max-width: 100%;
             }
+        }
+    }
+}
+
+
+// question responsive
+@media only screen and (max-width: 992px){
+    #question{
+        .row{
+            grid-template-columns: 1fr;
+            .col-6{
+                padding: 0 3rem;
+                span{
+                    padding: .7rem;
+                }
+            } 
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    #question{
+        .row{
+            .col-6{
+                span{
+                    padding: .7rem;
+                }
+            } 
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #question{
+        .row{
+            .col-6{
+                padding: 0 1rem;
+                span{
+                    padding: .7rem; 
+                }
+            } 
         }
     }
 }

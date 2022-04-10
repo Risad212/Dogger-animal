@@ -78,6 +78,9 @@ p, span, button {
 }
 
 @media only screen and (max-width: 600px) {
+  .head-content {
+    padding: 0;
+  }
   .head-content h3 {
     font-size: 1.2rem;
   }
@@ -797,6 +800,7 @@ p, span, button {
 
 #question {
   padding: 5em 0;
+  margin-bottom: 3rem;
 }
 
 #question .row {
@@ -804,6 +808,7 @@ p, span, button {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
 }
 
 #question .row .col-6 {
@@ -814,7 +819,7 @@ p, span, button {
 
 #question .row .col-6 span {
   background: #a2c0be;
-  width: 16%;
+  padding: .7rem;
   height: 30px;
   border-radius: 3.3rem;
   display: -webkit-box;
@@ -866,9 +871,113 @@ p, span, button {
 #question .row .col-6 div ul li i {
   padding-right: 1rem;
   color: #567876;
+  font-size: 1rem;
 }
 
 #question .row .col-6 img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  #question .row {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #question .row .col-6 {
+    padding: 0 3rem;
+  }
+  #question .row .col-6 span {
+    padding: .7rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #question .row .col-6 span {
+    padding: .7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #question .row .col-6 {
+    padding: 0 1rem;
+  }
+  #question .row .col-6 span {
+    padding: .7rem;
+  }
+}
+
+#client {
+  padding: 5em 0;
+  background: #f8f9fa;
+  margin-bottom: 5rem;
+}
+
+#client .row .col-4 {
+  text-align: center;
+}
+
+#client .row .col-4 blockquote {
+  background: #a2c0be;
+  padding: 2.5rem;
+  font-weight: 400;
+  font-style: italic;
+  border-radius: 7px;
+  font-size: 1rem;
+  -webkit-box-shadow: 0 5px 20px -5px, #0e0e0e;
+          box-shadow: 0 5px 20px -5px, #0e0e0e;
+  position: relative;
+}
+
+#client .row .col-4 blockquote::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  border-color: rgba(162, 192, 190, 0);
+  border-top-color: #a2c0be;
+  border-width: 15px;
+  margin-left: -15px;
+}
+
+#client .row .col-4 figure {
+  margin: auto;
+  margin-top: 2rem;
+  border: 6px solid #a2c0be;
+  max-width: 25%;
+  border-radius: 50%;
+}
+
+#client .row .col-4 figure img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+#client .row .col-4 h5 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#gallary {
+  padding: 5em 0;
+}
+
+#gallary .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+#gallary .row .col-3 {
+  padding: 0;
+}
+
+#gallary .row .col-3 img {
   max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
