@@ -1,0 +1,51 @@
+#blog{
+    .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 3rem;
+        .col-6{
+            display: flex;
+            img{
+                max-width: 100%;
+                padding-right: 1.9rem;
+             }
+            div{
+                h5{
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+                small{
+                    display: block;
+                    margin: .8rem 0;
+                    font-size: 1rem;
+                    color: rgb(179, 179, 179);
+                    font-weight: 300;
+                }
+                p{
+                    font-size: .9rem;
+                    line-height: 1.5;
+                    color: $gray;
+                }
+                a{
+                    margin-top: .9rem;
+                    display: block;
+                    color: $light-primary;
+                }
+            }
+        }
+    }
+}
+
+
+// blog responsive
+@media only screen and (max-width: 992px){
+    #blog{
+        .row{
+            grid-template-columns: repeat(1, 1fr);
+            .col-6{
+                flex-direction: column;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

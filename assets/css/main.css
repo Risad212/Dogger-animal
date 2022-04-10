@@ -24,7 +24,7 @@ h6, a {
   font-family: 'Open Sans', sans-serif;
 }
 
-p, span, button {
+p, span, button, small {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -79,7 +79,7 @@ p, span, button {
 
 @media only screen and (max-width: 600px) {
   .head-content {
-    padding: 0;
+    padding: 3rem 0;
   }
   .head-content h3 {
     font-size: 1.2rem;
@@ -992,6 +992,109 @@ p, span, button {
   #gallary .row {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+#blog .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 3rem;
+}
+
+#blog .row .col-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#blog .row .col-6 img {
+  max-width: 100%;
+  padding-right: 1.9rem;
+}
+
+#blog .row .col-6 div h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#blog .row .col-6 div small {
+  display: block;
+  margin: .8rem 0;
+  font-size: 1rem;
+  color: #b3b3b3;
+  font-weight: 300;
+}
+
+#blog .row .col-6 div p {
+  font-size: .9rem;
+  line-height: 1.5;
+  color: gray;
+}
+
+#blog .row .col-6 div a {
+  margin-top: .9rem;
+  display: block;
+  color: #a2c0be;
+}
+
+@media only screen and (max-width: 992px) {
+  #blog .row {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #blog .row .col-6 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}
+
+#service {
+  padding: 5em 0;
+}
+
+#service .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 3rem;
+}
+
+#service .row .col-4 img {
+  max-width: 25%;
+}
+
+#service .row .col-4 h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 1.3rem 0;
+}
+
+#service .row .col-4 p {
+  color: gray;
+  font-weight: 300;
+  font-size: .9rem;
+}
+
+/*------- service responsive --------*/
+@media only screen and (max-width: 992px) {
+  #service .row {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #service .row {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding: 0 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

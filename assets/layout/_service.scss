@@ -1,0 +1,44 @@
+#service{
+    padding: 5em 0;
+    .row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 3rem;
+        .col-4{
+            img{
+                max-width: 25%;
+            }
+            h4{
+                font-size: 1.2rem;
+                font-weight: 400;
+                margin: 1.3rem 0;
+            }
+            p{
+                color: $gray;
+                font-weight: 300;
+                font-size: .9rem;
+            }
+        }
+    }
+}
+
+
+/*------- service responsive --------*/
+@media only screen and (max-width: 992px) {
+    #service{
+       .row{
+           grid-template-columns: repeat(2, 1fr);
+           padding: 0 2rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #service{
+       .row{
+           grid-template-columns: repeat(1, 1fr);
+           padding: 0 2rem;
+        }
+    }
+}
