@@ -1,0 +1,44 @@
+footer{
+    background: $dak-color;
+    padding: 5em 0;
+    .row{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .col-3{
+            h4{
+              color: $white-color;
+              font-size: 1rem;
+              font-weight: 400;
+              margin-bottom: 1rem;
+            }
+            p{
+                color: $gray;
+                font-size: .8rem;
+            }
+            ul{
+                li{
+                    margin-bottom: .9rem;
+                    a{
+                        color: $gray;
+                        transition: all .3s ease;
+                        &:hover{
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+            .footer-social-link{
+                display: flex;
+                li{
+                    margin-right: 2rem;
+                }
+            }
+            input{
+                
+            }
+        }
+        .footer-link{
+            padding: 0 4rem;
+        }
+    }
+}
