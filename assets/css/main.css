@@ -1097,4 +1097,102 @@ p, span, button, small {
     padding: 0 2rem;
   }
 }
+
+#contact .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#contact .row .col-6 {
+  background: #a2c0be;
+  padding: 3rem;
+  margin: 0;
+}
+
+#contact .row .col-6 h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #405a58;
+}
+
+#contact .row .col-6 .firstInput {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  grid-gap: 2em;
+}
+
+#contact .row .col-6 label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #405a58;
+}
+
+#contact .row .col-6 .inputStyle {
+  padding: 0.9rem 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-top: 0.9rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+#contact .row .col-6 .submitBtn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 3rem;
+  outline: none;
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#contact .row .col-6:nth-child(2) {
+  background: #6c757d;
+  padding: 6rem 9rem;
+}
+
+#contact .row .col-6:nth-child(2) h3 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+#contact .row .col-6:nth-child(2) p {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: .5rem;
+}
+
+#contact .row .col-6:nth-child(2) span {
+  color: #a8b1b8;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/*------- service responsive --------*/
+@media only screen and (max-width: 992px) {
+  #contact .row {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+/*------- service responsive --------*/
+@media only screen and (max-width: 600px) {
+  #contact .row {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #contact .row .col-6:nth-child(2) h3 {
+    font-size: 1.5rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
