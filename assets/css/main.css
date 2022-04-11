@@ -1065,6 +1065,10 @@ p, span, button, small {
   margin-bottom: 3rem;
 }
 
+#service .row .col-4 {
+  margin-bottom: 5rem;
+}
+
 #service .row .col-4 img {
   max-width: 25%;
 }
@@ -1094,12 +1098,18 @@ p, span, button, small {
   #service .row {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    padding: 0 2rem;
+  }
+  #service .row .col-4 {
+    margin-bottom: 2rem;
   }
 }
 
 #contact {
   margin: 0;
+}
+
+#contact .container {
+  padding: 0rem calc((100vw - 1200px) / 2);
 }
 
 #contact .row {
@@ -1195,6 +1205,9 @@ p, span, button, small {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  #contact .row .col-6:nth-child(2) {
+    padding: 6rem 3rem;
+  }
   #contact .row .col-6:nth-child(2) h3 {
     font-size: 1.5rem;
   }
@@ -1216,12 +1229,13 @@ footer .row .col-3 h4 {
   color: #fff;
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 footer .row .col-3 p {
   color: gray;
   font-size: .8rem;
+  line-height: 1.9;
 }
 
 footer .row .col-3 ul li {
@@ -1246,9 +1260,72 @@ footer .row .col-3 .footer-social-link {
 
 footer .row .col-3 .footer-social-link li {
   margin-right: 2rem;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+footer .row .col-3 .footer-social-link li:hover {
+  margin-top: -8px;
+}
+
+footer .row .col-3 input {
+  padding: 0.7rem 0.5rem;
+  background: none;
+  border: 1px solid gray;
+  margin: 0;
+  border: 1px solid #6c757d;
+  outline: none;
+  color: #fff;
+}
+
+footer .row .col-3 .SendEmail {
+  background: #fff;
+  margin-left: -47px;
+  padding: .8rem 1.5rem;
+  color: #000;
 }
 
 footer .row .footer-link {
   padding: 0 4rem;
+}
+
+footer .row .footer-link ul li {
+  font-size: .9rem;
+}
+
+/*------- Footer responsive --------*/
+@media only screen and (max-width: 1032px) {
+  footer .row .col-3 .SendEmail {
+    margin-left: 0px;
+  }
+}
+
+/*------- Footer responsive --------*/
+@media only screen and (max-width: 992px) {
+  footer .row {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  footer .row .col-3 {
+    margin-bottom: 2rem;
+  }
+  footer .row .col-3 .SendEmail {
+    margin-left: -10px;
+  }
+}
+
+/*------- Footer responsive --------*/
+@media only screen and (max-width: 768px) {
+  footer .row {
+    padding: 0 3rem;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  footer .row .col-3 {
+    padding: 0;
+  }
+  footer .row .footer-link {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

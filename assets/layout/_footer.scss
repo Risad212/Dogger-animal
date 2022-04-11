@@ -9,11 +9,12 @@ footer{
               color: $white-color;
               font-size: 1rem;
               font-weight: 400;
-              margin-bottom: 1rem;
+              margin-bottom: 1.5rem;
             }
             p{
                 color: $gray;
                 font-size: .8rem;
+                line-height: 1.9;
             }
             ul{
                 li{
@@ -31,14 +32,83 @@ footer{
                 display: flex;
                 li{
                     margin-right: 2rem;
+                    transition: all .3s ease-in;
+                    &:hover{
+                        margin-top: -8px;
+                    }
                 }
             }
             input{
-                
+                padding: 0.7rem 0.5rem;
+                background: none;
+                border: 1px solid $gray;
+                margin: 0;
+                border: 1px solid #6c757d;
+                outline: none;
+                color: $white-color;
+            }
+            .SendEmail{
+                background: $white-color;
+                margin-left: -47px;
+                padding: .8rem 1.5rem;
+                color: $dak-color;
             }
         }
         .footer-link{
             padding: 0 4rem;
+            ul{
+                li{
+                    font-size: .9rem;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+/*------- Footer responsive --------*/
+@media only screen and (max-width: 1032px) {
+    footer{
+       .row{
+           .col-3{
+               .SendEmail{
+                 margin-left: 0px;
+               }
+           }
         }
     }
 }
+
+/*------- Footer responsive --------*/
+@media only screen and (max-width: 992px) {
+    footer{
+       .row{
+           grid-template-columns: repeat(2, 1fr);
+           .col-3{
+               margin-bottom: 2rem;
+               .SendEmail{
+                 margin-left: -10px;
+               }
+           }
+        }
+    }
+}
+
+/*------- Footer responsive --------*/
+@media only screen and (max-width: 768px) {
+    footer{
+       .row{
+           padding: 0 3rem;
+           grid-template-columns: repeat(1, 1fr);
+            .col-3{
+                padding: 0;
+            }
+           .footer-link{
+               padding: 0;
+           }
+        }
+    }
+}
+
