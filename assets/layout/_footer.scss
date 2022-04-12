@@ -4,6 +4,7 @@ footer{
     .row{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        padding: 5em 0;
         .col-3{
             h4{
               color: $white-color;
@@ -63,6 +64,17 @@ footer{
             }
         }
         
+    }
+    .copyright{
+        border-top: 1px solid $gray;
+        color: #737373;;
+        padding-top: 5rem;
+        text-align: center;
+        small{
+            i{
+                color: red;
+            } 
+        }
     }
 }
 

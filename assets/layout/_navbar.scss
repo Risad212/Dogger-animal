@@ -121,6 +121,7 @@
     padding-top: 2rem;
     box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
     transition: all .5s ease;
+    z-index: 99;
     i{
         font-size: 1.8rem;
         display: block;
@@ -159,4 +160,11 @@
         }
      }
    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .Mobile-nav{
+        min-width: 55%;
+    }
 }
